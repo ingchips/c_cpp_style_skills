@@ -66,4 +66,4 @@ npm test
 
 ## 许可证与来源
 
-本仓库原创的 skill 指令、脚本、模板和说明采用 [MIT License](LICENSE)，许可证随安装包分发。[style_docs/](style_docs/) 提供对应的原始参考 PDF，它们保留自身版权和使用条件，不因本仓库采用 MIT 而变更；文档链接见[资料来源](docs/sources.md)。PDF 随 Git 仓库提供，不进入 npm 和 ZIP 安装包，也不随普通任务自动加载。
+本仓库原创的 skill 指令、脚本、模板和说明采用 [MIT License](LICENSE)，许可证随安装包分发。[style_docs/](https://github.com/ingchips/c_cpp_style_skills/tree/main/style_docs) 提供对应的原始参考 PDF，它们保留自身版权和使用条件，不因本仓库采用 MIT 而变更；文档链接见[资料来源](docs/sources.md)。PDF 随 Git 仓库提供，不进入 npm 和 ZIP 安装包，也不随普通任务自动加载。
