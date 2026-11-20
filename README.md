@@ -45,6 +45,7 @@ npm 安装的是 CLI 和资源包，**不会自动把 skill 部署到所有客�
 SKILL.md                 模型入口与按需路由
 references/              C、C++、硬件、注释、命名和工具细则
 templates/project/       工程约束、clang-format、clang-tidy 与验证记录
+style_docs/              原始参考 PDF，随 Git 仓库提供
 docs/                    使用者文档，不随普通固件任务自动加载
 scripts/install.mjs      路径查询、复制安装、更新与 ZIP 打包
 tests/                   隔离测试，不进入分发包
@@ -65,4 +66,4 @@ npm test
 
 ## 许可证与来源
 
-本仓库原创的 skill 指令、脚本、模板和说明采用 [MIT License](LICENSE)，许可证随安装包分发。原始参考资料保留其自身权利，不因本仓库采用 MIT 而变更；记录见[资料来源](docs/sources.md)。
+本仓库原创的 skill 指令、脚本、模板和说明采用 [MIT License](LICENSE)，许可证随安装包分发。[style_docs/](style_docs/) 提供对应的原始参考 PDF，它们保留自身版权和使用条件，不因本仓库采用 MIT 而变更；文档链接见[资料来源](docs/sources.md)。PDF 随 Git 仓库提供，不进入 npm 和 ZIP 安装包，也不随普通任务自动加载。

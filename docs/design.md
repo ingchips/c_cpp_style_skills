@@ -45,4 +45,4 @@ LLVM/clangd 版本只记录验证环境，不参与安装判断。显式列表�
 - [DeepSeek filesystem provider](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/skill/skill-filesystem/README.md) 与 [home 解析](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/util/home-paths/README.md)
 - [CC Switch skill 存储与分发](https://github.com/farion1231/cc-switch/blob/main/src-tauri/src/services/skill.rs) 与 [DeepSeek 根目录覆盖](https://github.com/farion1231/cc-switch/blob/main/src-tauri/src/dsh_config.rs)
 
-Git 仓库仅包含这个 skill，旁边的 PDF、配电图和无关脚本不纳入分发。
+Git 仓库包含这个 skill 和 `style_docs/` 下的原始参考 PDF。npm/ZIP 仍只安装 skill 运行资源，参考 PDF 不加入其清单；目录外的配电图和无关脚本不纳入仓库。
