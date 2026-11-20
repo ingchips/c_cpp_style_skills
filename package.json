@@ -1,0 +1,24 @@
+{
+  "name": "personal-embedded-coding-style",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portable embedded C/C++ style skill with local installers and CC Switch ZIP packaging.",
+  "type": "module",
+  "bin": {
+    "personal-embedded-coding-style": "scripts/install.mjs"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "references/",
+    "templates/",
+    "docs/",
+    "scripts/"
+  ],
+  "engines": {
+    "node": ">=18.3.0"
+  },
+  "scripts": {
+    "test": "node --test tests/install.test.mjs"
+  }
+}

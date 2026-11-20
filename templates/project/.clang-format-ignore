@@ -1,0 +1,11 @@
+# Default exclusions; review these paths for each repository.
+**/generated/**
+**/gen/**
+**/autogen_*
+**/vendor/**
+**/third_party/**
+**/external/**
+**/build/**
+**/out/**
+**/Debug/**
+**/Release/**

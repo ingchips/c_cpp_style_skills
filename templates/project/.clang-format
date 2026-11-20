@@ -1,0 +1,60 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+# Personal embedded C/C++ baseline
+# Keep deterministic continuation layout instead of column drift.
+AlignAfterOpenBracket: DontAlign
+IndentWidth: 4
+ContinuationIndentWidth: 4
+ConstructorInitializerIndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: Never
+  AfterEnum: false
+  AfterFunction: true
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+
+IndentCaseLabels: true
+PointerAlignment: Right
+DerivePointerAlignment: false
+
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+# Keep SDK/header ordering stable; organize new Includes deliberately.
+SortIncludes: false
+IncludeBlocks: Preserve
+ReflowComments: false
+ColumnLimit: 100
+MaxEmptyLinesToKeep: 1
+
+# Avoid decorative alignment and preserve the personal pointer style.
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+AlignConsecutiveMacros: None
+# Do not create noisy alignment-only diffs in legacy code.
+AlignTrailingComments: false
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceBeforeAssignmentOperators: true
+
+# Auto detects formatting syntax from the input, not compile_commands.json.
+Standard: Auto
+...

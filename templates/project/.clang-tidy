@@ -1,0 +1,31 @@
+# Explicit baseline; validation provenance is in docs/coding-style.md.
+# No positive globs; the analyzer may also enable required core checks.
+Checks: >-
+  -*,
+  bugprone-assert-side-effect,
+  bugprone-macro-parentheses,
+  bugprone-macro-repeated-side-effects,
+  bugprone-sizeof-expression,
+  bugprone-suspicious-memset-usage,
+  bugprone-suspicious-semicolon,
+  bugprone-use-after-move,
+  clang-analyzer-core.CallAndMessage,
+  clang-analyzer-core.DivideZero,
+  clang-analyzer-core.NullDereference,
+  clang-analyzer-core.StackAddressEscape,
+  clang-analyzer-core.UndefinedBinaryOperatorResult,
+  clang-analyzer-core.uninitialized.Assign,
+  clang-analyzer-core.uninitialized.Branch,
+  clang-analyzer-core.uninitialized.UndefReturn,
+  clang-analyzer-cplusplus.NewDelete,
+  clang-analyzer-unix.Malloc,
+  readability-braces-around-statements
+InheritParentConfig: false
+WarningsAsErrors: ''
+HeaderFilterRegex: ''
+FormatStyle: none
+CheckOptions:
+  readability-braces-around-statements.ShortStatementLines: '0'
+
+# Diagnose by default; fixes and subsequent formatting are separate actions.
+# Missing checks are coverage gaps, not a requirement to upgrade LLVM/clangd.
