@@ -11,7 +11,7 @@
 | 方案 | 安装方式 | 本仓库采用的做法 |
 |---|---|---|
 | Agent Skills | 目录中包含 `SKILL.md` 和资源 | 保持一份通用 skill 包 |
-| Codex installer | 从仓库中的 skill 目录安装 | 本地可直接复制，有真实远程仓库后再提供 URL |
+| Codex installer | 从仓库中的 skill 目录安装 | 本地复制或使用 `ingchips/c_cpp_style_skills` 仓库 |
 | Vercel skills | 按宿主与作用域安装，链接或复制 | 提供现成命令，不复制其整套包管理逻辑 |
 | CC Switch | 管理主副本、应用开关和分发 | 使用 ZIP/仓库导入，不模拟数据库登记 |
 | npm | 安装 CLI 与资源包 | 无生命周期自动部署，使用显式 install 子命令 |
@@ -32,7 +32,7 @@ LLVM/clangd 版本只记录验证环境，不参与安装判断。显式列表�
 
 安装测试使用临时目录，覆盖路径映射、环境变量、预览无写入、复制与备份、链接拒绝、目录重叠、失败恢复和分发内容；npm 本地包也通过隔离前缀安装验证。测试不向真实工具目录部署，不修改 CC Switch 应用开关。
 
-实际固件工程误报率、其他 LLVM 版本、各 GUI 的实时加载、CC Switch UI 导入及交互延迟仍需对应环境验证。联网核实的是官方说明及上游实现，路径一致不代表所有客户端版本均已运行通过。本轮未创建远程仓库或向 npm registry 发布，包保留 `private: true`。
+实际固件工程误报率、其他 LLVM 版本、各 GUI 的实时加载、CC Switch UI 导入及交互延迟仍需对应环境验证。联网核实的是官方说明及上游实现，路径一致不代表所有客户端版本均已运行通过。Git 远程仓库为 [ingchips/c_cpp_style_skills](https://github.com/ingchips/c_cpp_style_skills)，通过 SSH 推送；未向 npm registry 发布，包保留 `private: true`。
 
 ## 联网核实来源
 

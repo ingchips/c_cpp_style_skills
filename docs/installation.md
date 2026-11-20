@@ -29,6 +29,8 @@ CC Switch 当前将 Codex 应用副本默认分发到 `~/.codex/skills`，并支
 从本仓库根目录执行；也可先克隆仓库再切换到该目录。npm 安装 CLI 和资源包，skill 部署需另行选择目标，没有安装后自动写入客户端目录的生命周期脚本。
 
 ```sh
+git clone git@github.com:ingchips/c_cpp_style_skills.git
+cd c_cpp_style_skills
 npm install -g .
 personal-embedded-coding-style paths
 personal-embedded-coding-style install --target codex
@@ -75,9 +77,13 @@ Vercel `skills` CLI 可从本地目录或 Git 仓库按宿主和作用域安装�
 ```sh
 npx skills add . --list
 npx skills add . --skill personal-embedded-coding-style -a claude-code codex antigravity-cli -g --copy
+
+# 从远程仓库发现和安装。
+npx skills add ingchips/c_cpp_style_skills --list
+npx skills add ingchips/c_cpp_style_skills --skill personal-embedded-coding-style -a claude-code codex antigravity-cli -g --copy
 ```
 
-DeepSeek 使用上表对应目录，不假定所有第三方 CLI 版本都内置其 target。Codex 也可用 `$skill-installer` 安装真实 GitHub skill 目录；本仓库未配置远程地址，发布后再补充实际链接。
+DeepSeek 使用上表对应目录，不假定所有第三方 CLI 版本都内置其 target。Codex 也可要求 `$skill-installer` 安装 [ingchips/c_cpp_style_skills](https://github.com/ingchips/c_cpp_style_skills) 仓库根目录中的 skill。
 
 ## CC Switch 导入
 
@@ -85,7 +91,7 @@ DeepSeek 使用上表对应目录，不假定所有第三方 CLI 版本都内置
 node scripts/install.mjs package --output dist/personal-embedded-coding-style.zip
 ```
 
-在 CC Switch 的 Skills 页面找到 ZIP 导入入口，选择文件，再勾选需要启用的应用。已有同名副本时使用管理器的更新/替换流程，并核对应用开关。ZIP 只有一层 skill 目录，包含参考文件、模板和 CLI，不含 `.git`、测试、缓存和构建产物。发布到 Git 托管后，也可将真实仓库地址和 `main` 分支加入管理器。[CC Switch 说明](https://github.com/farion1231/cc-switch#readme)
+在 CC Switch 的 Skills 页面找到 ZIP 导入入口，选择文件，再勾选需要启用的应用。已有同名副本时使用管理器的更新/替换流程，并核对应用开关。ZIP 只有一层 skill 目录，包含参考文件、模板、CLI 和 MIT 许可证，不含 `.git`、原始参考 PDF、测试、缓存和构建产物。也可在管理器的仓库列表中添加 `ingchips/c_cpp_style_skills`，选择 `main` 分支后安装。[CC Switch 说明](https://github.com/farion1231/cc-switch#readme)
 
 主副本默认在 `~/.cc-switch/skills`，也可配置成 `~/.agents/skills`；管理器再按应用分发链接或副本。单纯向管理主目录复制文件不等于登记完成，本脚本因此拒绝写入 `.cc-switch` 目录。已有 CC Switch 副本通过管理器维护，不与本地脚本交替覆盖。
 

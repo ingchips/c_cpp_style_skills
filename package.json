@@ -2,6 +2,15 @@
   "name": "personal-embedded-coding-style",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ingchips/c_cpp_style_skills.git"
+  },
+  "homepage": "https://github.com/ingchips/c_cpp_style_skills#readme",
+  "bugs": {
+    "url": "https://github.com/ingchips/c_cpp_style_skills/issues"
+  },
   "description": "Portable embedded C/C++ style skill with local installers and CC Switch ZIP packaging.",
   "type": "module",
   "bin": {
@@ -10,6 +19,7 @@
   "files": [
     "SKILL.md",
     "README.md",
+    "LICENSE",
     "references/",
     "templates/",
     "docs/",

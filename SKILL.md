@@ -1,5 +1,6 @@
 ---
 name: personal-embedded-coding-style
+license: MIT
 description: Apply personal embedded C/C++ style when writing, modifying, formatting, or reviewing firmware. Respect project conventions and hardware contracts.
 ---
 

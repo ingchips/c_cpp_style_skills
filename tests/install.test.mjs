@@ -160,11 +160,13 @@ test('distribution payload includes every runtime reference and the npm entry', 
     const files = payloadFiles(SOURCE).map(name => name.split(path.sep).join('/'));
     assert.ok(files.includes('scripts/install.mjs'));
     assert.ok(files.includes('package.json'));
+    assert.ok(files.includes('LICENSE'));
     for (const link of fs.readFileSync(path.join(SOURCE, 'SKILL.md'), 'utf8').matchAll(/\]\((references\/[^)]+)\)/g)) {
         assert.ok(files.includes(link[1]), `Missing skill resource: ${link[1]}`);
     }
     const metadata = JSON.parse(fs.readFileSync(path.join(SOURCE, 'package.json'), 'utf8'));
     assert.equal(metadata.bin[SKILL_NAME], 'scripts/install.mjs');
+    assert.equal(metadata.license, 'MIT');
     assert.equal(Object.keys(metadata.scripts).some(name => /^(preinstall|install|postinstall|prepare)$/.test(name)), false);
 });
 

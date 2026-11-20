@@ -13,7 +13,12 @@
 
 ## 快速使用
 
-从本仓库根目录运行。CLI 只依赖 Node.js 标准库，不需要 Python；没有 `postinstall` 等自动部署脚本。
+先通过 SSH 获取仓库，再从仓库根目录运行。CLI 只依赖 Node.js 标准库，不需要 Python；没有 `postinstall` 等自动部署脚本。
+
+```sh
+git clone git@github.com:ingchips/c_cpp_style_skills.git
+cd c_cpp_style_skills
+```
 
 ```sh
 # 直接运行：路径查询和安装预览均不写入工具目录。
@@ -57,3 +62,7 @@ npm test
 ```
 
 编码检查模板的本机验证记录见 [coding-style.md](templates/project/docs/coding-style.md)：LLVM/clangd 22.1.8、18 项诊断样例及正常 C/C++ 样例。安装测试使用临时目录；这些结果不能代替实际固件工程的误报评估、构建和硬件测试。
+
+## 许可证与来源
+
+本仓库原创的 skill 指令、脚本、模板和说明采用 [MIT License](LICENSE)，许可证随安装包分发。原始参考资料保留其自身权利，不因本仓库采用 MIT 而变更；记录见[资料来源](docs/sources.md)。

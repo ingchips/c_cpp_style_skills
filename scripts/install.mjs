@@ -8,7 +8,7 @@ import { randomUUID } from 'node:crypto';
 
 export const SOURCE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const SKILL_NAME = 'personal-embedded-coding-style';
-export const PAYLOAD = ['SKILL.md', 'README.md', 'package.json', 'references', 'templates', 'docs', 'scripts'];
+export const PAYLOAD = ['SKILL.md', 'README.md', 'LICENSE', 'package.json', 'references', 'templates', 'docs', 'scripts'];
 export const TARGETS = ['claude', 'codex', 'codex-legacy', 'agy', 'agy-legacy', 'deepseek', 'shared', 'deepseek-shared'];
 const PROJECT_ROOTS = {
     claude: '.claude/skills', codex: '.agents/skills', agy: '.agents/skills',
